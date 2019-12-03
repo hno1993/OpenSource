@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <title> About </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+      <style>
+        .mySlides {display:none;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ /* background-color: #333;*/
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ /*li a:hover:not(.active) {
+ background-color: #111;
+}*/
+li a:hover {
+  background-color: rgb(196, 112, 123);
+}
+.active {
+  background-color: #C32A3F;
+}
+
+    body {
+      background-image: url("img/SimpleBackground.png");
+      background-repeat:no-repeat;
+      background-size:cover;
+    } 
+    
+      </style>
+    </head>
+  <body>
+<ul style="font-family: Comic Sans MS, Comic Sans, cursive;">
+  <li><a href="homePage.html">Home</a></li>
+  <li><a class="active" href="About.html">About</a></li>
+  <li><a href="Downloads.html">Downloads</a></li>
+  <li><a href="Development.html">Development</a></li>
+</ul>
+
+<div style="margin-left:100px; margin-top:50px;">
+  
+  <div class="w3-card-4 w3-margin" style="width:600px; height:400px; background-color:#C32A3F">
+    
+    <div class="w3-content w3-display-container">
+      <div  style="margin-left:40px;" class="w3-content w3-section" >
+        <img class="mySlides" src="img\G1.png" style="width:520px; height:400px;">
+        <img class="mySlides" src="img\G2.png" style="width:520px; height:400px;">
+        <img class="mySlides" src="img\G3.png" style="width:520px; height:400px;">
+        <img class="mySlides" src="img\G4.png" style="width:520px; height:400px;">
+        <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+
+
+<div style="margin-left:750px; margin-top:-416px;">
+  <div class="w3-card-4 w3-margin" style="width:600px; height:400px;">
+    <img src="img\Logo.png" alt="welcome logo" width="250" style="margin-top:5px; margin-left:200px;">
+    <div class="w3-row">
+      <p style="text-align:justify; margin-top:1px; margin-left:20px; margin-right:20px;">
+        <b style="color: #C32A3F;"> EduGame </b>
+         is a website of educational games designed with educational and entertainment purposes for little children. 
+         It contains four types of games: Learn Numbers, Learn Time, Memory Cards and Puzzle Game. 
+         All four games can be used in the educational environments with the aim to assist children to learn about certain subjects as they play.
+         <br/> <br/>
+         <b style="color: #C32A3F;"> EduGame is developed by:</b>
+         Nourah Al-Mutlaq & Alhanoof Al-Ajmi.
+         <br/> <br/>
+         <b style="color: #C32A3F;"> Latest News</b>
+         <br/>
+         We are happy to announce the last release of EduGame version 0.1. 
+         This the first version supports only the English language.
+         You can find the source code on the Downloads page.
+         <br/>
+         Thank you,
+         <br/>
+         Development Team
+        </p>
+         
+    </div>
+  </div>
+</div>
+
+
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+  </script>
+  
+  
+
+
+  </body>
+ </html>
