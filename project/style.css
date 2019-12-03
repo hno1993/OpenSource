@@ -3,6 +3,7 @@ body{
 	background-image: url("img/background.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
+	font-family: 'Comic Sans MS', Comic Sans, cursive;
 }
 .all {
 	width: 100%;
@@ -22,7 +23,12 @@ body{
 	
 	text-align: center;
     display: block;
+	margin-bottom:40px;
 	//border: 2px solid green;
+}
+
+#GameBorder{
+	margin-top:25px;
 }
 #homepage{
 	position:absolute;
@@ -46,7 +52,7 @@ body{
 	top:20%;
 }
 #PicNumbers{
-	margin-right:100px;
+	//margin-right:100px;
 	//margin-right:11.8%;	
 	//margin-left:36%;
 }
@@ -56,16 +62,6 @@ body{
 }
 #PicNumbers, #Pictime{
 	cursor:pointer
-}
-#LabNumbers{
-	margin-right:90px;
-	//margin-right:11.8%;	
-	//margin-left:36%;
-}
-
-#LaTime{
-	margin-left:80px;
-	
 }
 
 #LaTime,#LabNumbers{
@@ -79,7 +75,7 @@ body{
     color: white;
     padding: 8px 12px;
     text-decoration: none;
-	cursor:pointer
+	cursor:pointer;
 }
 .labels{
 	margin-top:30px;
@@ -87,8 +83,8 @@ body{
 	padding-top:10px;
 	padding-bottom:10px;
     display: block;
-	//border: 2px solid orange;
-	
+	/*border: 2px solid orange;*/
+
 }
 .picClock{
 	margin-right:25px;

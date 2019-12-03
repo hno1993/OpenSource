@@ -5,24 +5,33 @@
 	<title> learn numbers </title>
 	<link rel="stylesheet" href="style.css">
 	
-
 <script>
 function myFunction(ev){
 
-var snd = new Audio("soundEffects\\numbers\\"+ev.target.id+".ogg");
+var snd = new Audio("sound effects\\numbers\\"+ev.target.id+".ogg");
 snd.play();
 //snd.currentTime=0;
 }
 
 </script>
+	<style>
+			body{
+	
+			background-image: url("img/SimpleBackground.png");
+			background-repeat:no-repeat;
+			background-size:cover;
+			}
+				
+	</style>
 </head>
 
 <body>
+		
 <div class="all">
 	<div class="header">
-		<img id="homepage" onclick="location.href = 'homePage.html';" src="img\homepage.png" alt="welcome logo" class="center"  width="50" height="50"> 
+		 <img id="homepage" onclick="location.href = 'homePage.html';" src="img\homepage.png" alt="welcome logo" class="center"  width="50" height="50"> 
 
-		<img src="img\border1.png" alt="welcome logo" class="center"  width="550" height="250"> 
+		<img id="GameBorder" src="img\border1.png" alt="welcome logo" class="center"  width="430" height="180"> 
 	</div>
 	<div class="body">
 		<!--<div class="description">
