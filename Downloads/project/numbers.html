@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> learn numbers </title>
+	<link rel="stylesheet" href="style.css">
+	
+<script>
+function myFunction(ev){
+
+var snd = new Audio("sound effects\\numbers\\"+ev.target.id+".ogg");
+snd.play();
+//snd.currentTime=0;
+}
+
+</script>
+	<style>
+			body{
+	
+			background-image: url("img/SimpleBackground.png");
+			background-repeat:no-repeat;
+			background-size:cover;
+			}
+				
+	</style>
+</head>
+
+<body>
+		
+<div class="all">
+	<div class="header">
+		 <img id="homepage" onclick="location.href = 'homePage.html';" src="img\homepage.png" alt="welcome logo" class="center"  width="50" height="50"> 
+
+		<img id="GameBorder" src="img\border1.png" alt="welcome logo" class="center"  width="430" height="180"> 
+	</div>
+	<div class="body">
+		<!--<div class="description">
+			
+		</div>
+		-->
+		<div class="leasons">
+			<img  class="picNumber" id="1" onclick="myFunction(event);" src="img\numbers\1.png"  width="150" height="150">
+			<img  class="picNumber" id="2" onclick="myFunction(event);" src="img\numbers\2.png"  width="150" height="150">
+			<img  class="picNumber" id="3" onclick="myFunction(event);" src="img\numbers\3.png"  width="150" height="150">
+			<img  class="picNumber" id="4" onclick="myFunction(event);" src="img\numbers\4.png"  width="150" height="150">
+			<img  class="picNumber" id="5" onclick="myFunction(event);" src="img\numbers\5.png"  width="150" height="150">
+			<img  class="picNumber" id="6" onclick="myFunction(event);" src="img\numbers\6.png"  width="150" height="150">
+			<img  class="picNumber" id="7" onclick="myFunction(event);" src="img\numbers\7.png"  width="150" height="150">
+			<img  class="picNumber" id="8" onclick="myFunction(event);" src="img\numbers\8.png"  width="150" height="150">
+			<img  class="picNumber" id="9" onclick="myFunction(event);" src="img\numbers\9.png"  width="150" height="150">
+			<img  class="picNumber" id="10" onclick="myFunction(event);" src="img\numbers\10.png"  width="150" height="150">
+		</div>
+	
+	</div>
+	
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> EduGame </title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+			body{
+	
+				background-image: url("img/SimpleBackground.png");
+				background-repeat:no-repeat;
+				background-size:cover;
+				font-family: 'Comic Sans MS', Comic Sans, cursive;
+			}
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			 /* background-color: #333;*/
+			}
+			
+			li {
+			  float: left;
+			}
+			
+			li a {
+			  display: block;
+			  color: black;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			li a:hover {
+ 			 background-color: rgb(196, 112, 123);
+			}
+			.active {
+			  background-color: #C32A3F;
+			}			
+	</style>
+</head>
+
+<body>
+		<ul>
+				<li><a onclick="location.href = 'homePage.html';" class="active" href="#home">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Downloads.html">Downloads</a></li>
+				<li><a href="Development.html">Development</a></li>
+		</ul>
+
+<div class="all">
+	<div class="header">
+		<img src="img\Logo.png" alt="welcome logo" class="center" width="600" style="margin-top:-20px;">
+	</div>
+	<div class="body">
+		<div class="leasons">
+			<img onclick="location.href = 'numbers.html';" id="PicNumbers" src="img\numbers.png" alt="numbers leason" width="150" height="150">
+			<img onclick="location.href = 'time.html';" id="Pictime" src="img\Clock\clock.png" alt="time leason" width="150" height="150" >
+			<img onclick="location.href = 'Memory Game.html';" id="Pictime" src="img\MemoryCards.png" alt="memory cards" width="150" height="150" >
+			<img onclick="location.href = 'Puzzle Game.html';" id="Pictime" src="img\Puzzle.png" alt="animals" width="150" height="150" >
+		</div>
+		<div class="labels">
+			<span  onclick="location.href = 'numbers.html';" id="LabNumbers"> Learn the Numbers </span> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+			<span  onclick="location.href = 'time.html';" id="LaTime"> &nbsp;&nbsp;&nbsp;Learn the Time&nbsp;&nbsp;&nbsp;</span> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+			<span  onclick="location.href = 'Memory Game.html';" id="LaTime"> Play Memory Cards </span> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+			<span  onclick="location.href = 'Puzzle Game.html';" id="LaTime"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Play Puzzle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+		</div>
+	</div>
+	
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> learn Time </title>
+	<link rel="stylesheet" href="style.css">
+
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("ID", ev.target.id);
+}
+
+function drop(ev) { 
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("ID");
+  
+  //var lication = document.getElementById(data);
+  //alert(data);
+  //var description = document.getElementById(ev.target.id);
+  //alert(ev.target.id);
+   
+   
+  if ( data == ev.target.id ) {
+  var snd2 = new Audio("sound effects\\thats-it.ogg");
+  snd2.play();
+  //alert("This is correct");
+  ev.target.appendChild(document.getElementById(data));
+  }
+  else {
+  var snd = new Audio("sound effects\\try-again.ogg");
+  snd.play();
+  //alert("Try again");
+  }
+ 
+}
+</script>
+	
+	<style>
+			body{
+	
+			background-image: url("img/SimpleBackground.png");
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+				
+	</style>
+</head>
+
+<body>
+		
+<div class="all">
+	<div class="header">
+		<img id="homepage" onclick="location.href = 'homePage.html';" src="img\homepage.png" alt="welcome logo" class="center"  width="50" height="50">
+		<img id="GameBorder" src="img\border2.png" alt="welcome logo" class="center"  width="430" height="180">
+				
+	</div>
+	<div class="body">
+		<!-- <div class="description">
+			<span> <h3 style="color:#81172E;"> In this exercise, you should drag the clock description to the correct box </h3> </span>
+		</div> -->
+		<div class="sentences">
+			<span draggable="true" ondragstart="drag(event)" class="ClockDesc" id="3"> Three O'clock </span>
+			<span draggable="true" ondragstart="drag(event)" class="ClockDesc" id="6"> Six O'clock </span>
+			<span draggable="true" ondragstart="drag(event)" class="ClockDesc" id="9"> Half past nine </span>
+			<span draggable="true" ondragstart="drag(event)" class="ClockDesc" id="7"> Quarter past six </span>
+		</div>
+	
+	
+	
+		<div class="leasons">
+			<img  class="picClock" src="img\Clock\clock1.png"  width="150" height="150">
+			<img  class="picClock" src="img\Clock\clock2.png"  width="150" height="150">
+			<img  class="picClock" src="img\Clock\clock3.png"  width="150" height="150">
+			<img  class="picClock" src="img\Clock\clock4.png"  width="150" height="150">
+		
+		</div>
+		<div class="DescripLoc">
+		<table class="clockDesc" border="1" align="center" > 
+			<tr > 
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" id="3"> </td> 
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" id="6"> </td> 
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" id="7"> </td> 
+				<td ondrop="drop(event)" ondragover="allowDrop(event)" id="9"> </td> 
+			</tr>
+			
+	
+	</div>
+	
+	
+	</div>
+</body>
+</html>
