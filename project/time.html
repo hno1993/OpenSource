@@ -25,13 +25,13 @@ function drop(ev) {
    
    
   if ( data == ev.target.id ) {
-  var snd2 = new Audio("sound effects\\thats-it.ogg");
+  var snd2 = new Audio("soundEffects/thats-it.ogg");
   snd2.play();
   //alert("This is correct");
   ev.target.appendChild(document.getElementById(data));
   }
   else {
-  var snd = new Audio("sound effects\\try-again.ogg");
+  var snd = new Audio("soundEffects/try-again.ogg");
   snd.play();
   //alert("Try again");
   }
